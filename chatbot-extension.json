@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://7bea-2405-201-a406-900b-b497-495e-599c-a53a.ngrok-free.app",
+      "url": "https://directly-legible-gibbon.ngrok-free.app",
       "description": "Public backend URL"
     }
   ],
