@@ -1,0 +1,65 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Medical Chatbot Backend API",
+    "version": "1.0.0",
+    "description": "Analyze symptoms and recommend department."
+  },
+  "servers": [
+    {
+      "url": "https://7bea-2405-201-a406-900b-b497-495e-599c-a53a.ngrok-free.app",
+      "description": "Public backend URL"
+    }
+  ],
+  "paths": {
+    "/analyze": {
+      "post": {
+        "summary": "Analyze symptoms and recommend department",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnalyzeRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnalyzeResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AnalyzeRequest": {
+        "type": "object",
+        "properties": {
+          "symptoms": { "type": "string" },
+          "duration": { "type": "string" },
+          "severity": { "type": "string" },
+          "history": { "type": "string" }
+        },
+        "required": ["symptoms", "duration", "severity", "history"]
+      },
+      "AnalyzeResponse": {
+        "type": "object",
+        "properties": {
+          "department": { "type": "string" },
+          "disease": { "type": "string" },
+          "severity_score": { "type": "integer" }
+        }
+      }
+    }
+  }
+}

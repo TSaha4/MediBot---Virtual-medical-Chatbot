@@ -1,0 +1,58 @@
+# --- Python cache and compiled files ---
+__pycache__/
+*.py[cod]
+*.so
+*.bak
+
+# --- Virtual environments ---
+venv/
+env/
+.venv/
+ENV/
+
+# --- Environment variables and secrets ---
+.env
+.env.*
+secrets.json
+ibm_keys.json
+*.token
+*.jwt
+
+# --- Logs and temp files ---
+*.log
+*.tmp
+
+# --- FAISS / embedding / model cache (if any) ---
+*.pkl
+*.pt
+*.npy
+*.index
+
+# --- IDE and OS-specific files ---
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Notebook checkpoints (if you use any) ---
+.ipynb_checkpoints/
+
+# --- Render / deployment-related ---
+*.zip
+*.tar.gz
+build/
+instance/
+*.db
+
+# --- Node.js frontend cache (if any later) ---
+node_modules/
+npm-debug.log
+
+# --- exclude dataset files ---
+# *.csv
+
+# --- Coverage and test artifacts (if you ever add tests) ---
+htmlcov/
+.coverage
+coverage.xml
+.cache
+.pytest_cache/

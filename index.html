@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Chatbot Assistant</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Arial, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/041/859/876/small_2x/national-doctor-s-day-hand-drawn-background-vector.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        position: relative;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(240, 248, 255, 0.82);
+        z-index: 0;
+        pointer-events: none;
+      }
+      header,
+      main,
+      footer {
+        position: relative;
+        z-index: 1;
+      }
+      header {
+        padding: 24px 10px 18px 10px;
+        text-align: center;
+        background: rgba(25, 118, 210, 0.85);
+        color: white;
+        width: 100%;
+        box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+        letter-spacing: 0.02em;
+      }
+      main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.97);
+        padding: 32px 22px 22px 22px;
+        border-radius: 18px;
+        max-width: 410px;
+        width: 90%;
+        text-align: center;
+        box-shadow: 0px 0px 22px rgba(25, 118, 210, 0.13);
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        position: relative;
+      }
+      .avatar {
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 12px;
+        background: #e3f2fd;
+        box-shadow: 0 2px 8px rgba(67, 183, 183, 0.11);
+        border: 3px solid #43b7b7;
+        margin-top: -65px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -42px;
+      }
+      h2 {
+        font-size: 1.45rem;
+        margin: 1.8em 0 0.5em 0;
+        color: #1976d2;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+      }
+      .subtitle {
+        color: #43b7b7;
+        font-size: 1.05rem;
+        margin-bottom: 1.1em;
+      }
+      p {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 1.2em;
+      }
+      .disclaimer {
+        color: #b71c1c;
+        background: #fff3e0;
+        padding: 0.7rem 1rem;
+        border-radius: 8px;
+        font-size: 0.97rem;
+        border-left: 5px solid #ffb300;
+        margin-top: 1.2em;
+        margin-bottom: 0.5em;
+        text-align: left;
+      }
+      footer {
+        text-align: center;
+        color: #fff;
+        font-size: 0.97rem;
+        margin: 1.2rem 0 0.8rem 0;
+        letter-spacing: 0.01em;
+        background: rgba(25, 118, 210, 0.85);
+        width: 100%;
+        padding: 0.5rem 0;
+      }
+      @media (max-width: 600px) {
+        .card {
+          padding: 1.2rem 0.5rem;
+        }
+        .avatar {
+          width: 60px;
+          height: 60px;
+          top: -30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Medical Chatbot Assistant</h1>
+    </header>
+
+    <main>
+      <div class="card">
+        <img
+          src="https://cdn.dribbble.com/userupload/2798815/file/original-d8b75e59492e979ad996c39eac216499.png"
+          alt="Doctor Avatar"
+          class="avatar"
+        />
+        <h2>AI Health Chatbot</h2>
+        <div class="subtitle">Your Virtual Health Triage Assistant</div>
+        <p>
+          Welcome! This AI-powered assistant can help you analyze your symptoms
+          and suggest which medical department to consult.<br />
+          <b>Type your symptoms using the chat icon below.</b>
+        </p>
+        <div class="disclaimer">
+          <strong>Disclaimer:</strong> This chatbot is for informational and
+          triage purposes only. It does <u>not</u> provide a medical diagnosis
+          and is not a substitute for professional medical advice, diagnosis, or
+          treatment.
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      &copy; 2025 Medical Chatbot Project &mdash; Powered by AI &amp; IBM Watson
+      Assistant
+    </footer>
+
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "05842a3c-f0fd-4d6e-9a9c-9cd61fa12ef1", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "7f15dcce-2a10-4b99-bb7f-75280222e6a0", // The ID of your service instance.
+        onLoad: async (instance) => {
+          await instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement("script");
+        t.src =
+          "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+          (window.watsonAssistantChatOptions.clientVersion || "latest") +
+          "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+</html>
