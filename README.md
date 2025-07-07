@@ -1,44 +1,44 @@
 # MediBot---Virtual-medical-Chatbot
-Project Title
+
 An AI-powered medical triage chatbot that interprets user-described symptoms and recommends the most appropriate medical department or specialist. Built with Python Flask, IBM Watson Assistant, and cloud-based data integration.
 
-Features
+**Features**
 - Conversational AI: Natural language symptom collection and clarification via Watson Assistant.
 - Advanced Symptom Extraction: Multi-stage pipeline including keyword mapping, fuzzy matching, semantic similarity (SentenceTransformers + FAISS), and TF-IDF lexical matching.
 - Disease Prediction & Triage: Weighted scoring based on matched symptoms, coverage, and severity for accurate department recommendations.
 - Cloud Integration: Secure data storage and retrieval using IBM Cloud Object Storage (COS).
 - Real-Time Web Chat: Seamless user interaction via an embedded Watson Assistant widget.
 - Extensible & Cloud-Ready: Modular backend, OpenAPI integration, and environment variable-based configuration.
-- 
-Architecture
+  
+**Architecture**
 - Frontend: Custom HTML/CSS website with embedded Watson Assistant web chat widget.
 - Backend: Python Flask REST API for symptom analysis (/analyze) and health checks (/health).
 - AI/NLP: Symptom extraction pipeline using pandas, fuzzywuzzy, SentenceTransformers, FAISS, and scikit-learn.
 - Data: Medical datasets (symptom-severity, disease-symptom, disease-department, synonym mapping) loaded from IBM COS.
 - Integration: Watson Assistant custom extension (OpenAPI/Swagger) connects the dialog flow to the backend API via ngrok.
 
-Setup & Deployment
+**Setup & Deployment**
 
-Prerequisites:
+**Prerequisites:**
 - Python 3.8 or above
 - IBM Cloud Object Storage account
 - IBM Watson Assistant instance
 - ngrok account (for static public URL)
 
-Required Python packages:
+**Required Python packages:**
 pip install -r requirements.txt
 
-Environment Variables:
+**Environment Variables:**
 Create a `.env` file with the following keys:
 IBM_API_KEY=your_ibm_api_key
 IBM_COS_ENDPOINT=your_cos_endpoint
 IBM_COS_BUCKET=your_cos_bucket
 PORT=5000
 
-Running the Backend:
+**Running the Backend:**
 python app.py
 
-Exposing the Backend:
+**Exposing the Backend:**
 ngrok http 5000
 Use the generated ngrok URL for Watson Assistant integration and OpenAPI.
 Setting Up Watson Assistant
@@ -48,10 +48,11 @@ Setting Up Watson Assistant
 4. Import the provided OpenAPI (Swagger) JSON for the `/analyze` endpoint.
 5. Map dialog variables to extension parameters.
 6. Embed the Watson Assistant web chat widget in your `index.html`.
-API Reference
+
+**API Reference**
 /analyze (POST)
 
-Request:
+**Request:**
 {
   "symptoms": "string",
   "duration": "string",
@@ -59,7 +60,7 @@ Request:
   "history": "string"
 }
 
-Response:
+**Response:**
 {
   "department": "string",
   "disease": "string",
@@ -68,7 +69,8 @@ Response:
 
 /health (GET)
 Returns system status and loaded data counts.
-Testing & Validation
+
+**Testing & Validation**
 - Unit and integration tests implemented for core logic and NLP pipeline.
 - `/health` endpoint helps with backend monitoring.
 - Iterative improvements made based on real user feedback.
