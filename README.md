@@ -19,7 +19,7 @@ An AI-powered medical triage chatbot that interprets user-described symptoms and
 
 **Flowchart**
 
-<img width="706" height="1491" alt="image" src="https://github.com/user-attachments/assets/2434896b-ca28-4746-b932-ba331adf341e" />
+<img width="650" height="1000" alt="image" src="https://github.com/user-attachments/assets/2434896b-ca28-4746-b932-ba331adf341e" />
 
 
 **Setup & Deployment**
@@ -101,7 +101,7 @@ Returns system status and loaded data counts.
 
 Result:
 
-<img width="645" height="517" alt="image" src="https://github.com/user-attachments/assets/d3e5a014-70a8-48f1-bce6-135bb368c1e2" />
+<p align="center"><img width="500" height="350" alt="image" src="https://github.com/user-attachments/assets/d3e5a014-70a8-48f1-bce6-135bb368c1e2" /></p>
 
 
 2nd Case (Disease: Diabetes):
@@ -117,6 +117,6 @@ Result:
 
 
 Result:
+<p align="center"> <img width="500" height="350" alt="image" src="https://github.com/user-attachments/assets/ea4a42aa-75d7-4935-b74d-22768966c78c" /></p>
 
-<img width="637" height="438" alt="image" src="https://github.com/user-attachments/assets/ea4a42aa-75d7-4935-b74d-22768966c78c" />
 
