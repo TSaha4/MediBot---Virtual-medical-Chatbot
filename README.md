@@ -89,10 +89,15 @@ Returns system status and loaded data counts.
 
 1st Case (Disease: Tuberculosis):
 
-<img width="655" height="1084" alt="image" src="https://github.com/user-attachments/assets/c01e25b0-c121-40b2-88df-a21ee0c3c40f" />
-<img width="640" height="1075" alt="image" src="https://github.com/user-attachments/assets/e0f1f083-3580-4a9f-ab8a-396b39e59a46" />
-<img width="640" height="1077" alt="image" src="https://github.com/user-attachments/assets/69c5b1c1-a32f-4b71-8d97-e5858c1094dd" />
-<img width="646" height="1081" alt="image" src="https://github.com/user-attachments/assets/fba41f22-8716-42c3-8c2a-07c9150b5164" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c01e25b0-c121-40b2-88df-a21ee0c3c40f" width="45%" />
+  <img src="https://github.com/user-attachments/assets/e0f1f083-3580-4a9f-ab8a-396b39e59a46" width="45%" />
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/69c5b1c1-a32f-4b71-8d97-e5858c1094dd" width="45%" />
+  <img src="https://github.com/user-attachments/assets/fba41f22-8716-42c3-8c2a-07c9150b5164" width="45%" />
+</p>
+
 
 Result:
 
@@ -101,10 +106,15 @@ Result:
 
 2nd Case (Disease: Diabetes):
 
-<img width="651" height="814" alt="image" src="https://github.com/user-attachments/assets/a80bc11f-9e0c-45e7-b544-768bdabaf663" />
-<img width="643" height="799" alt="image" src="https://github.com/user-attachments/assets/3bc80910-4857-46a8-9cad-f795079ca4bd" />
-<img width="649" height="910" alt="image" src="https://github.com/user-attachments/assets/c87b086f-93c5-483f-bee9-778257fbfd2c" />
-<img width="645" height="874" alt="image" src="https://github.com/user-attachments/assets/db450bf6-80d2-4d77-8d5c-f66f9d9aa70f" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a80bc11f-9e0c-45e7-b544-768bdabaf663" width="45%" />
+  <img src="https://github.com/user-attachments/assets/3bc80910-4857-46a8-9cad-f795079ca4bd" width="45%" />
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c87b086f-93c5-483f-bee9-778257fbfd2c" width="45%" />
+  <img src="https://github.com/user-attachments/assets/db450bf6-80d2-4d77-8d5c-f66f9d9aa70f" width="45%" />
+</p>
+
 
 Result:
 
